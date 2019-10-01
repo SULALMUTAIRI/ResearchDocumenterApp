@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResearchDocumenter.View.home">
+    <ContentPage.Content>
+        <StackLayout>
+            <AbsoluteLayout>
+                <FlexLayout IsVisible="True" JustifyContent="SpaceEvenly" Direction="Column" AlignItems="Center" Margin="30,150,30,0" >
+                    <Button Margin="0,0,0,10" Text="List Articles" x:Name="List_Articles" Clicked="List_Articles_ClickedAsync" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+                    <Button Margin="0,0,0,10" Text="Add Article" x:Name="Add_Article" Clicked="Add_Article_ClickedAsync" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+                    <Button Margin="0,0,0,10" Text="Serach Articles"  x:Name="Serach_Articles" Clicked="Serach_Articles_ClickedAsync" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+                    <Button Margin="0,0,0,10" Text="Sign Out" x:Name="Sign_Out" Clicked="Sign_Out_Clicked" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  HorizontalOptions="CenterAndExpand"/>
+                </FlexLayout>
+            </AbsoluteLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

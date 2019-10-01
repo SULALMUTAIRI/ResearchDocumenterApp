@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ResearchDocumenter"
+             x:Class="ResearchDocumenter.MainPage">
+
+    <StackLayout WidthRequest="300" Orientation="Vertical">  
+                    <Label Text="Username"/>
+                    <Entry Placeholder="Username" x:Name="username"/>
+                    <Label Text="Password"/>
+                    <Entry IsPassword="True" Placeholder="Password" x:Name="password"/>
+                    <Button x:Name="logIn" FontSize="Medium" BorderColor="Black" FlexLayout.AlignSelf="Stretch" CornerRadius="5"  Clicked="LogIn_Clicked" HorizontalOptions="CenterAndExpand" Text="Login" TextColor="White" BackgroundColor="#3399ff"/>
+                    <Label Text="or" FontSize="15" TextColor="DarkGray" BackgroundColor="Transparent" FlexLayout.AlignSelf="Center"/>
+                    <Button x:Name="signUp" FontSize="Medium" TextColor="White" BorderColor="Black" BackgroundColor="#00b33c"  CornerRadius="5" FlexLayout.AlignSelf="Stretch"  Clicked="SignUp_Clicked" HorizontalOptions="CenterAndExpand" Text="Sign Up"/>
+    </StackLayout>
+
+</ContentPage>

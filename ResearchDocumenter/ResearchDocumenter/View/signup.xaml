@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResearchDocumenter.View.signup">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+                <StackLayout Orientation="Horizontal">
+                    <Entry Placeholder="Full Name" Text="{Binding FullName}"></Entry>                    
+                </StackLayout>
+                <Entry Placeholder="Email" Text="{Binding Email}"></Entry>
+                <Entry Placeholder="Password" IsPassword="True" Text="{Binding Password}"></Entry>
+                <Entry Placeholder="Re-Password" IsPassword="True"></Entry>
+                <Button Text="Sign Up" Clicked="Button_ClickedAsync"></Button> 
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

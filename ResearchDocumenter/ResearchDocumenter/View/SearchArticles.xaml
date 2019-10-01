@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResearchDocumenter.View.SearchArticles">
+    <ContentPage.Content>
+        <StackLayout> 
+                    <FlexLayout IsVisible="True" JustifyContent="SpaceEvenly" Direction="Column" AlignItems="Center" Margin="30,50,30,0" >
+                        <Label Text="Serach Text"/>
+                        <Entry Placeholder="sText" x:Name="sText"/>
+                        <Label Text="Password"/>
+                        <Button x:Name="Search" FontSize="Medium" BorderColor="Black" FlexLayout.AlignSelf="Stretch" CornerRadius="5"  Clicked="Search_ClickedAsync" HorizontalOptions="CenterAndExpand" Text="Search Articles" TextColor="White" BackgroundColor="#3399ff"/>
+                    </FlexLayout> 
+            <ListView x:Name="listView"
+              Margin="20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Label Text="{Binding Title}" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Text="{Binding Year}" />
+                                <Label Grid.Column="2" Text="{Binding MainAuthor}" HorizontalTextAlignment="End" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
